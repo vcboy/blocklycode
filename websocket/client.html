@@ -12,8 +12,10 @@
             // 连接打开事件，打开连接后发送数据
             ws.onopen = function () {
                 // 使用send()方法发送数据
-                ws.send("这是测试数据");
-
+                var str = "if 1==1: \n";
+                str= str+'    print("true")';
+                //ws.send("print(1)");
+                ws.send(str);
                 alert("数据发送中:\n这是测试数据");
             };
 

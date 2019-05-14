@@ -21,6 +21,10 @@ def client_left(client, server):
 def message_back(client, server, message):
     # 这里的message参数就是客户端传进来的内容
     print("Client(%d) said: %s" % (client['id'], message))
+    #eval(message)
+    num = 9
+    if 1 == 1:
+   	    print(sys.argv[0])
     # 这里可以对message进行各种处理
     result = "服务器已经收到消息了..." + message
     # 将处理后的数据再返回给客户端
