@@ -3,11 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>WebSocket网页端JS示例</title>
-
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript">
+        var ws = {};
+        $(document).ready(function(){
+            ws = new WebSocket("ws://localhost:4201");
+        })
         function WebSocketTest() {
             // 新建WebSocket连接
-            var ws = new WebSocket("ws://localhost:4200");
+            //var ws = new WebSocket("ws://localhost:4201");
 
             // 连接打开事件，打开连接后发送数据
             ws.onopen = function () {
@@ -33,11 +37,21 @@
                 alert("连接已关闭...");
             };
         }
+
+        function sendcode(){
+            var code = $("#codeinput").val();
+            console.log(code);
+            //var ws = new WebSocket("ws://localhost:4201");
+            ws.send(code);
+        }
     </script>
+
 </head>
 <body>
 <div id="sse">
     <a href="javascript:WebSocketTest()">运行 WebSocket</a>
+    <textarea cols="50" rows="10" id="codeinput" name="codeinput"></textarea>
+    <input type="button" name="submit" value="提交" id="submit" onclick="sendcode()">
 </div>
 </body>
 </html>
