@@ -7,6 +7,7 @@ from socket import gethostbyname, gethostname
 host = gethostbyname(gethostname())
 #host = '10.82.97.232'
 print(host)
+print(gethostname())
 
 # 获取ARP表
 

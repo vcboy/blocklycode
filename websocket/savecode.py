@@ -4,10 +4,10 @@ from websocket_server import WebsocketServer
 import sys
 from importlib import reload
 
-from flask import Flask
-from flask import request
-from flask import Response
-import json
+#from flask import Flask
+#from flask import request
+#from flask import Response
+#import json
 import zxby
 
 # 因为考虑到传入的字符串有非英文字符，
@@ -35,7 +35,7 @@ def message_back(client, server, message):
     code = message;
     jsondata = zxby.main(code)
 
-    result = "服务器已经收到消息了..." + jsondata
+    result = "服务器已经收到消息了..."
     # 将处理后的数据再返回给客户端
     server.send_message(client, result)
 
