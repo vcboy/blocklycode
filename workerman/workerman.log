@@ -1,0 +1,13 @@
+2019-10-10 11:29:04 pid:1 PDOException: SQL:UPDATE `wx_member` SET `lan_ip` = 'lanip:10.82.96.96' WHERE username=lanip:10.82.96.96 SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':10.82.96.96' at line 1 in D:\workspace\python\blocklycode\workerman\vendor\workerman\mysql\src\Connection.php:1770
+Stack trace:
+#0 D:\workspace\python\blocklycode\workerman\vendor\workerman\mysql\src\Connection.php(1828): Workerman\MySQL\Connection->execute('UPDATE `wx_memb...', NULL)
+#1 D:\workspace\python\blocklycode\workerman\test.php(27): Workerman\MySQL\Connection->query('UPDATE `wx_memb...')
+#2 D:\workspace\python\blocklycode\workerman\Workerman\Connection\TcpConnection.php(656): {closure}(Object(Workerman\Connection\TcpConnection), 'lanip:10.82.96....')
+#3 D:\workspace\python\blocklycode\workerman\Workerman\Events\Select.php(294): Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#4 D:\workspace\python\blocklycode\workerman\Workerman\Worker.php(2374): Workerman\Events\Select->loop()
+#5 D:\workspace\python\blocklycode\workerman\Workerman\Worker.php(1374): Workerman\Worker->run()
+#6 D:\workspace\python\blocklycode\workerman\Workerman\Worker.php(1317): Workerman\Worker::forkWorkersForWindows()
+#7 D:\workspace\python\blocklycode\workerman\Workerman\Worker.php(532): Workerman\Worker::forkWorkers()
+#8 D:\workspace\python\blocklycode\workerman\test.php(52): Workerman\Worker::runAll()
+#9 {main}
+2019-10-10 11:29:04 pid:1 Worker process terminated

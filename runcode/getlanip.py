@@ -1,6 +1,7 @@
 import socket
 import os
 import urllib.request
+import json
 import urllib.parse
 from websocket import create_connection
 
@@ -23,10 +24,11 @@ def send_tcp_server():
     print('server dafu %s' % data.decode())
     ss.close()
 
-def send_websocket_server():   
+def send_websocket_server(data):   
     ws = create_connection("ws://127.0.0.1:2000/") # workerman的websocket服务端
     print("Sending 'Hello, World'...")
-    ws.send("Hello, World")
+    msg = {"lanip": data,"username":'admin',"msgtype":'setip'}
+    ws.send(json.dumps(msg))
     print("Sent")
     print("Receiving...")
     result = ws.recv()
@@ -39,4 +41,4 @@ if __name__ == '__main__':
     # url = 'http://192.168.1.4/1.txt'
     # f = urllib.request.urlopen(url)
     # print(f.read().decode('utf-8'))
-    send_websocket_server()
+    send_websocket_server(lanip)
