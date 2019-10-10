@@ -1,2 +1,10 @@
 websocket/__pycache__
 websocket/websocket_server/__pycache__
+manager/backend/runtime
+manager/vendor
+manager/backend/web/assets
+manager/backend/web/ckeditor
+manager/backend/web/resource
+manager/backend/web/ueditor
+manager/backend/web/import
+manager/backend/web/img/uploads/tempcourse

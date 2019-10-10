@@ -1,0 +1,138 @@
+.tabfield{
+    margin-bottom: 15px;
+}
+
+.tabfield div{
+    display: inline;
+}
+
+.tabfield div input{
+    width: 15%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tabfield div select{
+    width: 15%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.createfield{
+
+}
+
+.createfield div label{
+    /*display: block;*/
+    width: 10%;
+}
+
+.createfield div input{
+    width: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.createfield div select{
+    width: 30%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.createfield .help-block{
+    display: inline-block;
+}
+
+.printarea table{
+    border-collapse: collapse;
+    table-layout: fixed;
+
+}
+.printarea p {
+    padding: 0px;
+    margin: 0px;
+}
+.printarea td {
+    height: 40px;
+    padding-left: 5px;
+}
+
+.printarea{
+    width: 800px;
+    padding: 20px 100px;
+    page-break-after: always;
+}
+.printarea table{
+    width: 600px;
+    padding: 10px 100px;
+}
+
+.printarea .tip{
+    FONT-WEIGHT: bold;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+
+.printarea .ptitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.pfooter {
+    float: right;
+    padding: 5px 5px 0px 0px;
+}
+.pdate {
+    display: inline-block;
+    padding-left: 50px;
+    /* float: right; */
+}
+
+.onecun {
+    display: inline-block;
+    padding: 5px;
+    width: 100px;
+}
+
+.onecun .sfz{
+    word-wrap: break-word;
+}
+
+.twocun {
+    display: inline-block;
+    padding: 5px;
+    width: 140px;
+}
+
+.twocun .sfz{
+    word-wrap: break-word;
+}
+
+.sfz {
+    display: inline-block;
+    padding: 5px;
+    width: 330px;
+}
+
+.importerror{
+    color: red;
+    text-align: center;
+    font-size: 14px;
+}
+
+.editor-form .control-label{
+    display: block;
+    float: left;
+}
+
+.editorfield{
+    padding-left: 0px;
+    margin-bottom: 15px;
+}
+
+.wlogo{
+    background: url(../img/logo.png)
+}

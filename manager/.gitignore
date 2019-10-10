@@ -1,0 +1,110 @@
+<<<<<<< .mine
+# yii console command
+/yii
+
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+/doc||||||| .r106
+# yii console command
+/yii
+
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+=======
+/wap/_devel
+/wap/_tmp
+/wap/jiaoben4114
+/wap/qeephp
+/wap/upload
+/wap/fonts
+/AdminLTE-master
+AdminLTE-master.zip
+/backend/runtime
+/environments
+/frontend
+/job
+/sims
+/tests
+/vendor
+/console
+/db
+/aaa
+/aaa.rar
+/backend-bak
+/wap/pay/lib/WxPay.Config.php
+/wap/pay/cert
+/wap/sample
+
+/.bowerrc
+/.project
+/.svn/
+/LICENSE.md
+/README.md
+/common/
+/composer.json
+/composer.lock
+/index.html
+/init
+/init.bat
+/phpinfo.php
+/requirements.php
+/test.txt
+/LocalGoogleFont.zip
+/source-sans-pro.zip
+/aliyun
+/vstp/
+/wap/pay/logs/2018-03-24.log
+/yii
+/yii.bat
+/资料/">>>>>>> .r112
