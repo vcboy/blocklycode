@@ -4,3 +4,5 @@ manager/backend/runtime
 manager/vendor
 manager/backend/web
 manager/doc/
+workerman/Workerman
+workerman/vendor

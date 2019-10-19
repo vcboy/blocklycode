@@ -15,7 +15,7 @@ $ws_worker->onMessage = function($connection, $data)
     // 向客户端发送hello $data
     //$connection->send('hello ' . $data);
     $dataArr = json_decode($data,true);
-    //var_dump($dataArr);
+    var_dump($dataArr);
     $connection->send('hello ' . $dataArr['msgtype']);
     /*foreach($connection->worker->connections as $con)
     {
